@@ -63,7 +63,7 @@ var productsArray = [
 
 function router(menu) {
   productRouter.route("/").get((req, res) => {
-    res.render("productsRouter", {
+    res.render("productsRouter", { //productsRouter is a call to EJS file i.e. productsRouter.ejs file
       title: "Products Page",
       products: productsArray,
       menu

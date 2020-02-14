@@ -31,7 +31,7 @@ var moviesArray = [
 function router(menu){
     moviesRouter.route('/')
     .get((req, res) =>{
-        res.render('moviesRouter', {title: 'Movies Page', movies: moviesArray, menu})
+        res.render('moviesRouter', {title: 'Movies Page', movies: moviesArray, menu})  //moviesRouter is a call to EJS file i.e. moviesRouter.ejs file
         // fs.readFile('db.json', 'utf-8', (err, data)=>{
         //     if(err) throw err;
         //     //res.send(data);
